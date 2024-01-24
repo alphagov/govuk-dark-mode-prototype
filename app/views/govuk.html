@@ -1,48 +1,9 @@
-{% extends "layouts/main.html" %}
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
 
 {% set pageName="Home" %}
 
-{% block content %}
-    
-<div id="global-cookie-message" class="gem-c-cookie-banner govuk-clearfix govuk-cookie-banner js-banner-wrapper" data-module="cookie-banner" data-nosnippet="" role="region" aria-label="Cookies on GOV.UK" data-cookie-banner-module-started="true" style="display: none;">
-  <div class="govuk-cookie-banner__message govuk-width-container">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-cookie-banner__heading govuk-heading-m">Cookies on GOV.UK</h2>
-        <div tabindex="-1" class="govuk-cookie-banner__content gem-c-cookie-banner__confirmation">
-          <span class="gem-c-cookie-banner__content"><p class="govuk-body">We use some essential cookies to make this website work.</p>
-<p class="govuk-body">We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services.</p>
-<p class="govuk-body">We also use cookies set by other sites to help us deliver content from their services.</p></span>
-          <p class="gem-c-cookie-banner__confirmation-message--accepted govuk-body" hidden="" data-ga4-cookie-banner="" data-module="ga4-link-tracker" data-ga4-track-links-only="" data-ga4-set-indexes="" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;cookie banner&quot;,&quot;section&quot;:&quot;You have accepted additional cookies&quot;}" data-ga4-link-tracker-module-started="true">You have accepted additional cookies. <span class="gem-c-cookie-banner__confirmation-message">You can <a class="govuk-link" data-module="gem-track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation" href="/help/cookies" data-gem-track-click-module-started="true">change your cookie settings</a> at any time.</span></p>
-          <p class="gem-c-cookie-banner__confirmation-message--rejected govuk-body" hidden="">You have rejected additional cookies. <span class="gem-c-cookie-banner__confirmation-message">You can <a class="govuk-link" data-module="gem-track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation" href="/help/cookies" data-gem-track-click-module-started="true">change your cookie settings</a> at any time.</span></p>
-        </div>
-      </div>
-    </div>
-    <div class="js-confirmation-buttons govuk-button-group">
-        
-
-
-  <button class="gem-c-button govuk-button" type="submit" data-module="gem-track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted" data-cookie-types="all" data-gem-track-click-module-started="true" style="display: block;">Accept additional cookies</button>
-
-
-        
-
-
-  <button class="gem-c-button govuk-button" type="submit" data-module="gem-track-click" data-reject-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner rejected" data-gem-track-click-module-started="true" style="display: block;">Reject additional cookies</button>
-
-
-        <a class="govuk-link" href="/help/cookies">View cookies</a>
-    </div>
-    <div hidden="" class="js-hide-button govuk-button-group">
-      <button class="gem-c-cookie-banner__hide-button govuk-button" data-hide-cookie-banner="true" data-module="gem-track-click ga4-event-tracker" data-track-category="cookieBanner" data-track-action="Hide cookie banner" data-ga4-event="{&quot;event_name&quot;:&quot;select_content&quot;,&quot;type&quot;:&quot;cookie banner&quot;,&quot;action&quot;:&quot;closed&quot;,&quot;section&quot;:&quot;You have accepted additional cookies&quot;}" data-gem-track-click-module-started="true" data-ga4-event-tracker-module-started="true">
-          Hide this message
-        </button>
-    </div>
-  </div>
-</div>
-
-
-          
+{% block header %}
 <header role="banner" class="gem-c-layout-super-navigation-header gem-c-layout-super-navigation-header--blue-background" data-module="gem-track-click ga4-event-tracker ga4-link-tracker" data-track-links-only="" data-ga4-expandable="" data-gem-track-click-module-started="true" data-ga4-event-tracker-module-started="true" data-ga4-link-tracker-module-started="true">
   <div class="gem-c-layout-super-navigation-header__container govuk-clearfix">
     <div class="govuk-width-container">
@@ -273,18 +234,6 @@
 </div>    </nav>
   </div>
 </header>
-
-
-    
-
-
-
-      <div id="wrapper" class="homepage">
-            
-
-<main id="content" role="main">
-
-  
 <header class="homepage-header">
   <div class="govuk-width-container">
     <div class="homepage-header__title-container">
@@ -319,6 +268,17 @@
     </div>
   </div>
 </header>
+{% endblock %}
+
+{% block content %}
+
+      <div id="wrapper" class="homepage">
+            
+
+<main id="content" role="main">
+
+  
+
   
 <section class="homepage-section homepage-section__popular-links">
   <div class="govuk-width-container">
