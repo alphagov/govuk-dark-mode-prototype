@@ -2,6 +2,12 @@
 
 {% set pageName="Home" %}
 
+{% set mainClasses = "govuk-main-wrapper--auto-spacing" %}
+
+{% block main %}
+  {{ super() }}
+{% endblock %}
+
 {% block content %}
 
 <div class="govuk-grid-row">
