@@ -3,6 +3,9 @@
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
 // 
 
+html{
+    background-color: #1E1F21 !important;
+}
 // Add extra styles here
 .govuk-template__body{
     background-color: #1E1F21 !important;
@@ -23,7 +26,7 @@
     background-color: #263136 !important;
 }
 
-.govuk-link:visited{
+.govuk-link:visited, p > a:visited{
     color: #906fd6 !important;
 }
 
@@ -167,7 +170,7 @@ border-color: #EFEFEF
     }
 }
 
-.govuk-link:hover {
+.govuk-link:hover, a:hover {
     text-decoration-thickness: max(3px, .1875rem, .12em);
     -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none;
@@ -175,7 +178,7 @@ border-color: #EFEFEF
     text-decoration-skip: none
 }
 
-.govuk-link:focus {
+.govuk-link:focus, a:focus {
     outline: 3px solid rgba(0,0,0,0);
     color: #0b0c0c;
     background-color: #fd0;
@@ -185,19 +188,19 @@ border-color: #EFEFEF
     box-decoration-break: clone
 }
 
-.govuk-link:link {
+.govuk-link:link, a:link {
     color: #1d70b8
 }
 
-.govuk-link:visited {
+.govuk-link:visited, a:visited {
     color: #4c2c92
 }
 
-.govuk-link:hover {
+.govuk-link:hover, a:hover {
     color: #003078
 }
 
-.govuk-link:active {
+.govuk-link:active, a:active {
     color: #0b0c0c
 }
 
@@ -7716,7 +7719,7 @@ border-color: #EFEFEF
     font-size: 14px;
     font-size: .875rem;
     line-height: 1.1428571429;
-    border-bottom: 10px solid #fff;
+    border-bottom: 10px solid #1E1F21;
     color: #fff;
     background: #0b0c0c
 }
